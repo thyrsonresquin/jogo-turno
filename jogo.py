@@ -85,6 +85,11 @@ class Jogo:
             else:
                 print("Escolha inválida! O herói perdeu a vez.")
 
+        if self.heroi.get_vida() > 0:
+            print("\nParabéns! O herói venceu a batalha!")
+        else:
+            print("\nO inimigo venceu a batalha! Tente novamente.")
+
 # criar instância do jogo e iniciar
 jogo = Jogo()
 jogo.iniciar_jogo()
